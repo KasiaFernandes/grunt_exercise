@@ -1,0 +1,56 @@
+$color-twitter: #4099FF
+$color-facebook: #3B5998
+$color-google: #DB5A3C
+$color-instagram: #5C3D2E
+$color-github: #4183C4
+$btn-height: 75px
+
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	border-radius: $radius
+
+.social 
+	margin: 0 auto 
+	width: 500px
+	text-align: center
+	padding: 50px
+	background-color: #469099
+	h2 
+		color: #505050
+		font-size: 40px
+	.icon-btn 
+		width: $btn-height
+		height: $btn-height
+		+border-radius (50%)
+		border: 0
+		margin: 0
+		background-color: #fff
+		cursor: pointer
+		font-size: 40px
+		line-height: $btn-height
+		text-align: center
+		&:hover 
+			transform: scale(1.10)
+			color: #fff
+	.twitter 
+		color: $color-twitter
+		&:hover 
+			background-color: $color-twitter
+	.facebook 
+		color: $color-facebook
+		&:hover 
+			background-color: $color-facebook
+	.google-plus 
+		color: $color-google
+		&:hover 
+			background-color: $color-google
+	.instagram 
+		color: $color-instagram
+		&:hover 
+			background-color: $color-instagram
+	.github 
+		color: $color-github
+		&:hover 
+			background-color: $color-github
